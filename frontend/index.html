@@ -1,0 +1,269 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Science portfolio showcasing machine learning, Python, SQL, RAG and Generative AI projects.">
+    <title>Data Science Portfolio | Balaram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+
+    <nav class="navbar">
+    <a href="#home" class="logo">Balaram<span>.</span></a>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#chatbot">AI Assistant</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button
+        type="button"
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Switch to light mode"
+        title="Switch theme"
+    >
+        <span id="theme-icon" aria-hidden="true">â˜€</span>
+        <span id="theme-label">Light mode</span>
+    </button>
+    </nav>
+
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <p class="eyebrow">DATA SCIENCE Â· MACHINE LEARNING Â· GENERATIVE AI</p>
+
+            <h1>
+                Turning data into
+                <span>intelligent solutions.</span>
+            </h1>
+
+            <p class="hero-description">
+                Hi, I'm Balaram, an Associate Data Scientist interested in
+                machine learning, analytics, RAG systems and AI-powered applications.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="primary-button">Explore My Projects</a>
+                <a href="#chatbot" class="secondary-button">Ask My AI Assistant</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <p class="eyebrow">INTRODUCTION</p>
+            <h2>About Me</h2>
+
+            <p>
+                I work with data to solve practical problems using Python,
+                SQL, machine learning and analytics. I'm also building
+                projects with large language models, retrieval-augmented
+                generation (RAG), and AI agents.
+            </p>
+
+            <p>
+                My goal is to develop reliable, useful AI applications that
+                connect data, models and real-world business needs.
+            </p>
+        </section>
+
+        <section id="skills" class="content-section">
+            <p class="eyebrow">WHAT I WORK WITH</p>
+            <h2>Technical Skills</h2>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Programming & Data</h3>
+                    <p>Python, SQL, data cleaning, data analysis</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <p>Model development, evaluation, explainable modelling</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Generative AI</h3>
+                    <p>LLMs, RAG, prompt engineering, AI agents</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Tools & Analytics</h3>
+                    <p>Power BI, Git, FastAPI, Streamlit</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-type">GENERATIVE AI</p>
+                    <h3>SQL RAG Agent</h3>
+                    <p>
+                        An AI application designed to answer questions using
+                        database schemas and SQL-related context.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>RAG</span>
+                        <span>SQL</span>
+                    </div>
+                    <a href="https://github.com/Balaram1353/SQL-RAG-Agent"
+                       target="_blank" rel="noopener noreferrer">
+                        View on GitHub â†—
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-type">GENERATIVE AI</p>
+                    <h3>Minimal RAG System</h3>
+                    <p>
+                        A learning project exploring how document retrieval
+                        and language models can work together to answer questions.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>LLMs</span>
+                        <span>Retrieval</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-type">AI APPLICATION</p>
+                    <h3>Portfolio AI Assistant</h3>
+                    <p>
+                        An interactive portfolio chatbot powered by an NVIDIA
+                        language model, with a FastAPI backend and web frontend.
+                    </p>
+                    <div class="tags">
+                        <span>FastAPI</span>
+                        <span>JavaScript</span>
+                        <span>NVIDIA AI</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="chatbot" class="content-section chatbot-section">
+            <p class="eyebrow">INTERACTIVE AI</p>
+            <h2>Ask My AI Assistant</h2>
+            <p>
+                Ask about my skills, projects, machine learning or Generative AI.
+            </p>
+
+            <div id="chat-container">
+                <div id="chat-messages" aria-live="polite">
+                    <div class="message bot-message">
+                        Hello! I'm your AI assistant. What would you like to know?
+                    </div>
+                </div>
+
+
+            <form id="chat-form">
+                <label for="question">Your question</label>
+
+                <div class="chat-input-row">
+                    <textarea
+                        id="question"
+                        name="question"
+                        placeholder="Ask me something..."
+                        rows="1"
+                        autocomplete="off"
+                        required
+                    ></textarea>
+
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+            </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+    <p class="eyebrow">LET'S CONNECT</p>
+    <h2>Get in Touch</h2>
+
+    <p>
+        Interested in my work in data science, machine learning, or
+        Generative AI? Feel free to connect with me for professional
+        opportunities and collaboration.
+    </p>
+
+    <div class="contact-grid">
+
+        <!-- Email -->
+        <a class="contact-card"
+           href="mailto:balaram1353naidu@gmail.com">
+
+            <span class="contact-icon" aria-hidden="true">@</span>
+
+            <span class="contact-copy">
+                <strong>Email</strong>
+                <span>balaram1353naidu@gmail.com</span>
+            </span>
+
+            <span class="contact-arrow" aria-hidden="true">â†—</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="contact-card"
+           href="https://www.linkedin.com/in/balaram-naidu-18a116229"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <span class="contact-icon" aria-hidden="true">in</span>
+
+            <span class="contact-copy">
+                <strong>LinkedIn</strong>
+                <span>Connect with me professionally</span>
+            </span>
+
+            <span class="contact-arrow" aria-hidden="true">â†—</span>
+        </a>
+
+        <!-- GitHub -->
+        <a class="contact-card"
+           href="https://github.com/Balaram1353"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <span class="contact-icon" aria-hidden="true">&lt;/&gt;</span>
+
+            <span class="contact-copy">
+                <strong>GitHub</strong>
+                <span>Explore my projects and code</span>
+            </span>
+
+            <span class="contact-arrow" aria-hidden="true">â†—</span>
+        </a>
+
+    </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Â© 2026 Balaram Â· Data Science & AI Portfolio</p>
+        <div>
+            <a href="https://github.com/Balaram1353"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/balaram-naidu-18a116229"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
